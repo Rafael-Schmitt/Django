@@ -64,6 +64,8 @@ h1, h2, h3, h4, h5, h6 {
     background-size: 100% 100px;
     background-position: bottom;
     background-repeat: no-repeat;
+    pointer-events: none;  /* ADD THIS LINE */
+    z-index: 1;  /* ADD THIS TOO */
 }
 
 .hero-content h1 {
@@ -96,6 +98,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .social-icons {
     margin-top: 30px;
+    position: relative;  /* ADD THIS */
+    z-index: 2;
 }
 
 .social-icons a {
