@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings
 SECRET_KEY = 'django-insecure-k*l9##e^^=wiom1x(sj-+$nu@+d%9d1$c)16nm@c9!+i^+o1k^'
 DEBUG = True
-ALLOWED_HOSTS = ['django-production-c2db.up.railway.app', '127.0.0.1']
+ALLOWED_HOSTS = ['django-production-2270.up.railway.app', '127.0.0.1']
 #CSRF_TRUSTED_ORIGINS = ['https://django-production-c2db.up.railway.app']
 
 # Application definition
