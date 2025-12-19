@@ -11,7 +11,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings
 SECRET_KEY = 'django-insecure-k*l9##e^^=wiom1x(sj-+$nu@+d%9d1$c)16nm@c9!+i^+o1k^'
 DEBUG = True
-ALLOWED_HOSTS = ['django-production-69bd.up.railway.app/', '127.0.0.1']
+ALLOWED_HOSTS = ['django-production-69bd.up.railway.app/', '127.0.0.1:8000']
 CSRF_TRUSTED_ORIGINS = ['https://django-production-69bd.up.railway.app']
 
 # Application definition
@@ -95,7 +95,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'images')
 
 # For development - where Django will look for static files
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'staticfiles'),  # This should match your actual folder name
+    os.path.join(BASE_DIR, 'static'),  # This should match your actual folder name
 ]
 
 # For production - where static files will be collected when you run collectstatic
