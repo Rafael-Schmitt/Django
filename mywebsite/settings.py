@@ -4,6 +4,7 @@ Django settings for mywebsite project.
 
 from pathlib import Path
 import os
+os.environ['PORT'] = '8000'
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -11,8 +12,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings
 SECRET_KEY = 'django-insecure-k*l9##e^^=wiom1x(sj-+$nu@+d%9d1$c)16nm@c9!+i^+o1k^'
 DEBUG = True
-ALLOWED_HOSTS = ['django-production-69bd.up.railway.app/', '127.0.0.1:8000']
-CSRF_TRUSTED_ORIGINS = ['https://django-production-69bd.up.railway.app']
+ALLOWED_HOSTS = ['django-production-c2db.up.railway.app', '127.0.0.1']
+#CSRF_TRUSTED_ORIGINS = ['https://django-production-c2db.up.railway.app']
 
 # Application definition
 INSTALLED_APPS = [
@@ -87,7 +88,7 @@ USE_I18N = True
 USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
-STATIC_URL = '/staticfiles/'
+STATIC_URL = '/static/'
 
 # Media files (user uploads - separate from static files)
 MEDIA_URL = '/images/'
