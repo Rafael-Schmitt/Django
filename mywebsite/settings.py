@@ -11,7 +11,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings
 SECRET_KEY = 'django-insecure-k*l9##e^^=wiom1x(sj-+$nu@+d%9d1$c)16nm@c9!+i^+o1k^'
 DEBUG = True
-ALLOWED_HOSTS = ['https://django-production-69bd.up.railway.app/']
+ALLOWED_HOSTS = ['django-production-69bd.up.railway.app/', '127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://django-production-69bd.up.railway.app']
 
 # Application definition
 INSTALLED_APPS = [
@@ -32,7 +33,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
@@ -99,7 +99,7 @@ STATICFILES_DIRS = [
 ]
 
 # For production - where static files will be collected when you run collectstatic
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_root')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
